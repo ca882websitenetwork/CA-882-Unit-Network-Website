@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>JLAB - CA-882</title>
+  <link rel="stylesheet" href="/CA-882-Website/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+   <a class="logo" href="/CA-882-Website/index.html">
+    <img src="../assets/img_09.jpg" alt="Site logo">
+    <span>CA-882</span>
+    </a>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/CA-882-Website/index.html">HOME</a>
+      <a href="/CA-882-Website/about.html">ABOUT</a>
+      
+      <div class="dropdown">
+        <a class="dropbtn" href="/CA-882-Website/leadership.html">LEADERSHIP &#9662;</a>
+        <div class="dropdown-content">
+            <a href="/CA-882-Website/leadership.html">CHAIN OF COMMAND</a>
+            <a href="/CA-882-Website/instructors.html">INSTRUCTORS</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="dropbtn" href="/CA-882-Website/resources.html">CADET RESOURCES &#9662;</a>
+        <div class="dropdown-content">
+            <a href="/CA-882-Website/resources.html#chain-of-command">CHAIN OF COMMAND</a>
+            <a href="/CA-882-Website/resources.html#operating-instructions">OPERATING INSTRUCTIONS</a>
+            <a href="/CA-882-Website/resources.html#knowledge">KNOWLEDGE</a>
+          </div>
+    </div>
+
+      <div class="dropdown">
+    <a class="dropbtn" href="/CA-882-Website/teams.html">TEAMS/PROGRAMS &#9662;</a>
+    <div class="dropdown-content">
+        <a href="/CA-882-Website/team-dc.html">DRILL & CEREMONIES</a>
+        <a href="/CA-882-Website/team-dc.html#color-guard" class="sub-item">Color Guard</a>
+        <a href="/CA-882-Website/team-dc.html#honor-guard" class="sub-item">Honor Guard</a>
+        <a href="/CA-882-Website/team-dc.html#drill-team" class="sub-item">Drill Team</a>
+        <a href="/CA-882-Website/team-khas.html">KHAS</a>
+        <a href="/CA-882-Website/team-mwr.html">MWR</a>
+        <a href="/CA-882-Website/team-raiders.html">RAIDERS</a>
+        <a href="/CA-882-Website/team-jlab.html">JLAB</a>
+        <a href="/CA-882-Website/team-stlx.html">STELLARXPLORERS</a>
+      </div>
+    </div>
+    <a class="family-network-link" href="/index.html">FAMILY NETWORK &#8594;</a>
+  </nav>
+</header>
+
+<main class="content">
+  <h2>JLAB</h2>
+  <section class="photo-placeholders section">
+      <div class="photo-grid">
+        <div class="photo-box-2">
+          <p>The Academic Bowl team represents CA-882 in an academically focused competition consisting
+of 3 rounds against other JROTC teams across the world. The team consists of four team
+members and two alternate team members. After passing two online exams, those who make it to
+the final (third) round qualify to compete at Washington D.C. Membership is open only to AS-1,
+AS-2, and AS-3 level cadets. <br><br> CA-882 has gone to Nationals in 2025, 2024, 2023, 2022, and 2016. We placed 2nd in 2023 and 5th in 2025! We would love to
+practice or scrimmage with other JROTC teams, so please reach out to [insert email here] if interested!</p>
+        </div>
+        <img class="teams-photo" src="../assets/img_01.jpg" alt="JLAB">
+      </div>
+    </section>
+</main>
+
+<footer class="footer network-footer">
+  <p class="network-footer-title">UNITED STATES AIR FORCE JUNIOR ROTC</p>
+  <p class="network-footer-meta">CA-882 &middot; Crescenta Valley High School &middot; La Crescenta, CA</p>
+  <div class="network-footer-socials">
+    <a href="https://www.instagram.com/cvhs_ca882/" target="_blank" rel="noopener"><span aria-hidden="true">&#9679;</span> @cvhs_ca882</a>
+    <a href="https://www.youtube.com/@ca-882afjrotc3" target="_blank" rel="noopener"><span aria-hidden="true">&#9654;</span> CA-882 AFJROTC</a>
+  </div>
+  <p class="network-footer-contact">Parent questions? Contact the project lead: <a href="mailto:jacob925520@gmail.com">jacob925520@gmail.com</a></p>
+  <p class="network-footer-disclaimer">This is not an official U.S. Air Force or Department of Defense website and does not imply DoD endorsement. Signups are processed through Brevo; site hosted on Vercel; fonts from Google.</p>
+  <p class="network-footer-government">The information and opinions contained in this internet site do not reflect the official policy or position of the United States Government, United States Air Force, Jeanne M. Holm Center for Officer Accessions and Citizen Development, or the Air Force Junior Reserve Officer Training Corps.</p>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav') && navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+    }
+  });
+
+  // Close menu when window is resized to larger screen
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('active');
+      dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Projects</title>
+  <link rel="stylesheet" href="/CA-882-Website/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+   <a class="logo" href="/CA-882-Website/index.html">
+    <img src="../assets/img_09.jpg" alt="Site logo">
+    <span>CA-882</span>
+    </a>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/CA-882-Website/index.html">HOME</a>
+      <a href="/CA-882-Website/about.html">ABOUT</a>
+      
+      <div class="dropdown">
+        <a class="dropbtn" href="/CA-882-Website/leadership.html">LEADERSHIP &#9662;</a>
+        <div class="dropdown-content">
+            <a href="/CA-882-Website/leadership.html">CHAIN OF COMMAND</a>
+            <a href="/CA-882-Website/instructors.html">INSTRUCTORS</a>
+          </div>
+      </div>
+
+    <div class="dropdown">
+        <a class="dropbtn" href="/CA-882-Website/resources.html">CADET RESOURCES &#9662;</a>
+        <div class="dropdown-content">
+            <a href="#chain-of-command">CHAIN OF COMMAND</a>
+            <a href="#operating-instructions">OPERATING INSTRUCTIONS</a>
+            <a href="#knowledge">KNOWLEDGE</a>
+          </div>
+    </div>
+
+      <div class="dropdown">
+    <a class="dropbtn" href="/CA-882-Website/teams.html">TEAMS/PROGRAMS &#9662;</a>
+    <div class="dropdown-content">
+        <a href="/CA-882-Website/team-dc.html">DRILL & CEREMONIES</a>
+        <a href="/CA-882-Website/team-dc.html#color-guard" class="sub-item">Color Guard</a>
+        <a href="/CA-882-Website/team-dc.html#honor-guard" class="sub-item">Honor Guard</a>
+        <a href="/CA-882-Website/team-dc.html#drill-team" class="sub-item">Drill Team</a>
+        <a href="/CA-882-Website/team-khas.html">KHAS</a>
+        <a href="/CA-882-Website/team-mwr.html">MWR</a>
+        <a href="/CA-882-Website/team-raiders.html">RAIDERS</a>
+        <a href="/CA-882-Website/team-jlab.html">JLAB</a>
+        <a href="/CA-882-Website/team-stlx.html">STELLARXPLORERS</a>
+      </div>
+    </div>
+    <a class="family-network-link" href="/index.html">FAMILY NETWORK &#8594;</a>
+  </nav>
+</header>
+
+<main class="content">
+  <h2>CADET RESOURCES</h2>
+  <br>
+  <p2>
+    Make sure to use your GUSD account to access
+  </p2>
+
+   <h3 id="chain-of-command">
+    CHAIN OF COMMAND
+  </h3>
+  <p2>
+    The Chain of Command is an official hierarchy of authority that
+     dictates who is in charge of whom and of whom permission must be asked.
+  </p2>
+  <iframe src="https://drive.google.com/file/d/13YkuVBStpFqJlbAdEXYDTI6x95ns3LW3/preview" width="100%" height="600" frameborder="0" allow="autoplay"></iframe>
+   
+  <h3 id="operating-instructions">
+    OPERATING INSTRUCTIONS
+  </h3>
+  <p2>
+    The Operating Instructions (OI) serves as a reference
+     to cadets for any questions they may have (promotion criteria, 
+     chain of command, class procedures, demerits) and sets the guidelines 
+     for how AFJROTC should function as a whole.
+  </p2>
+  <iframe src="https://drive.google.com/file/d/1W2OS8n8R34bpMOiV2drT8nZ71g8E6fSk/preview" width="100%" height="600" frameborder="0" allow="autoplay"></iframe>
+
+  <h3 id="knowledge">
+    KNOWLEDGE
+  </h3>
+  <p2>
+    Warrior Knowledge develops competent, ethical leaders by mastering
+     Air Force fundamentals like the core values of Integrity First, 
+     Service Before Self, and Excellence in All We Do. Along with customs, 
+     history, and essential practical skills. This training builds character,
+      sharpens critical thinking, and prepares cadets to lead and fight as
+       officers in the Air Force and Space Force, ensuring mission success 
+       and upholding the highest military standards.
+  </p2>
+  <iframe src="https://docs.google.com/document/d/1y283-C0tygsEN-d2_bqj93WRtel9KZgcubGUJlz5ReM/preview" width="100%" height="600" frameborder="0" allow="autoplay"></iframe>
+
+</main>
+
+<footer class="footer network-footer">
+  <p class="network-footer-title">UNITED STATES AIR FORCE JUNIOR ROTC</p>
+  <p class="network-footer-meta">CA-882 &middot; Crescenta Valley High School &middot; La Crescenta, CA</p>
+  <div class="network-footer-socials">
+    <a href="https://www.instagram.com/cvhs_ca882/" target="_blank" rel="noopener"><span aria-hidden="true">&#9679;</span> @cvhs_ca882</a>
+    <a href="https://www.youtube.com/@ca-882afjrotc3" target="_blank" rel="noopener"><span aria-hidden="true">&#9654;</span> CA-882 AFJROTC</a>
+  </div>
+  <p class="network-footer-contact">Parent questions? Contact the project lead: <a href="mailto:jacob925520@gmail.com">jacob925520@gmail.com</a></p>
+  <p class="network-footer-disclaimer">This is not an official U.S. Air Force or Department of Defense website and does not imply DoD endorsement. Signups are processed through Brevo; site hosted on Vercel; fonts from Google.</p>
+  <p class="network-footer-government">The information and opinions contained in this internet site do not reflect the official policy or position of the United States Government, United States Air Force, Jeanne M. Holm Center for Officer Accessions and Citizen Development, or the Air Force Junior Reserve Officer Training Corps.</p>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav') && navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+    }
+  });
+
+  // Close menu when window is resized to larger screen
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('active');
+      dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
